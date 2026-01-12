@@ -1,30 +1,28 @@
-# 🌳 React Tree View Component
+# 📋 Kanban Board – React + TypeScript
 
-A **modern, professional Tree View component** built with **React + TypeScript**, supporting hierarchical data with drag & drop, expand/collapse, and dynamic node creation.  
-Designed to be clean, intuitive, and enterprise-ready.
+A modern, responsive **Kanban Board** built using **React, TypeScript, and dnd-kit**.  
+It supports drag-and-drop between columns, inline card editing, and a clean professional UI inspired by popular project management tools.
 
 🔗 **Live Demo:**  
-👉 https://treeviewez.netlify.app/
+👉 https://react-kanban-boardez.netlify.app/
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- 🌿 **Hierarchical Tree Structure**
-  - Unlimited nesting (parent → child → grandchild)
-- ➕ **Add Nodes**
-  - Add child nodes to any level
-- ▸ **Expand / Collapse**
-  - Toggle visibility of child nodes
-- 🧲 **Drag & Drop**
-  - Drag nodes and move them across the hierarchy
-  - Safe drag handle (no click conflicts)
-- 🎨 **Professional UI**
-  - Circular avatars
-  - Dotted hierarchy connectors
-  - Card-based layout with soft shadows
-- 📱 **Responsive**
-  - Works smoothly on desktop and mobile
+- ✅ Three default columns:
+  - Todo
+  - In Progress
+  - Done
+- ➕ Add cards to any column
+- 🗑️ Delete cards
+- ✏️ Inline editable card titles
+- 🧲 Drag & drop cards between columns
+- 📐 Preserves card order within columns
+- 📱 Fully responsive (mobile-friendly)
+- 🎨 Professional, modern UI
+- 🧠 Clean component structure:  
+  **KanbanBoard → Column → Card**
 
 ---
 
@@ -34,7 +32,7 @@ Designed to be clean, intuitive, and enterprise-ready.
 - **TypeScript**
 - **dnd-kit** (Drag & Drop)
 - **Vite**
-- **Custom CSS (no UI framework)**
+- **CSS (custom, no UI library)**
 
 ---
 
@@ -43,13 +41,14 @@ Designed to be clean, intuitive, and enterprise-ready.
 ```txt
 src/
  ├─ components/
- │   ├─ TreeView.tsx
- │   ├─ TreeNode.tsx
+ │   ├─ KanbanBoard.tsx
+ │   ├─ Column.tsx
+ │   ├─ Card.tsx
  ├─ data/
- │   └─ mockTreeData.ts
+ │   └─ mockData.ts
  ├─ types/
- │   └─ tree.ts
+ │   └─ kanban.ts
  ├─ styles/
- │   └─ tree.css
+ │   └─ kanban.css
  ├─ App.tsx
  └─ main.tsx
